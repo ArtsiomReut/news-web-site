@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Новостное агенство</title>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/media.css" type="text/css">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</head>
+<body>
+    <div id="popup-container">
+        <div id="moadal-menu">
+                <button id="close-popup">X</button>
+                <a href="index.html" class="menu-nav-link-popup">Главная</a>
+                <a href="#" class="menu-nav-link-popup">Политика</a>
+                <a href="#" class="menu-nav-link-popup">Общество</a>
+                <a href="#" class="menu-nav-link-popup">Экономика</a>
+                <a href="#" class="menu-nav-link-popup">В мире</a>
+                <a href="#" class="menu-nav-link-popup">Проишествия</a>
+                <a href="#" class="menu-nav-link-popup">Спорт</a>
+                <a href="#" class="menu-nav-link-popup">Наука </a>
+                <a href="#" class="menu-nav-link-popup">Туризм</a>
+        </div>
+    </div>
+    <div id="top-bar">
+        <div class="fixed-block">Самые <a class="top-bar-link" href="#">свежие новости</a> в реальном времени <div id="datatime">19:30 12.06.2024</div></div>
+    </div>
+    <header id="header">
+        <div class="fixed-block">
+            <button id="menu-phone"><img src="assets/img/menu-btn.png" alt="Меню"></button>
+            <img src="assets/img/news-logo.png" alt="Новостное агенство" id="logo-header">
+            <select name="city-vlue" id="city-combo-box">
+                <option value="Москва">Москва</option>
+                <option value="Калуга">Калуга</option>
+                <option value="Обнинск">Обнинск</option>
+                <option value="Петербург">Петербург</option>
+            </select>
+            <div class="day-data-block">
+                <div class="day-now">5 февраля, среда</div>
+                <div class="day-time">10:48</div>
+                <div class="day-weather">+22&deg;C</div>
+            </div>
+            <input type="search" id="search-box" placeholder="Поиск по сайту">
+            <a id="search-img-link" href="#"><img src="assets/img/search.png" alt="Поиск по сайту" id="search-img-pic"></a>
+        </div>
+    </header>
+    <nav id="menu-container">
+        <div class="fixed-block">
+            <div id="menu-bar">
+                <a href="#" class="menu-nav-link">Главная</a><div class="split-nav">/</div>
+                <a href="#" class="menu-nav-link">Политика</a><div class="split-nav">/</div>
+                <a href="#" class="menu-nav-link">Общество</a><div class="split-nav">/</div>
+                <a href="#" class="menu-nav-link">Экономика</a><div class="split-nav">/</div>
+                <a href="#" class="menu-nav-link">В мире</a><div class="split-nav">/</div>
+                <a href="#" class="menu-nav-link">Проишествия</a><div class="split-nav">/</div>
+                <a href="#" class="menu-nav-link">Спорт</a><div class="split-nav">/</div>
+                <a href="#" class="menu-nav-link">Наука </a><div class="split-nav">/</div>
+                <a href="#" class="menu-nav-link">Туризм</a>
+            </div>
+        </div>
+    </nav>
+    <main id="central-container">
+        <div class="fixed-block" id="flex-container">
+            <div id="column-left">
+                <h2>Новости дня</h2>
+                <div class="news-item">
+                    <div class="news-item-text">Дмитрий Губерниев: У хоккеистов есть маленький шанс попасть на Олимпиаду</div>
+                    <div class="news-item-status">
+                        <a href="#">/ Спорт</a>
+                        <div class="news-time">10:45</div>
+                        <div class="news-comment-count">15</div>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-item-text">Песков назвал очевидным продолжение поставок Америки оружия Украине</div>
+                    <div class="news-item-status">
+                        <a href="#">/ Политика</a>
+                        <div class="news-time">10:45</div>
+                        <div class="news-comment-count">15</div>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-item-text">На Сахалине восемь междугородних автобусных маршрутов прекратили работу</div>
+                    <div class="news-item-status">
+                        <a href="#">/ Транспорт</a>
+                        <div class="news-time">10:45</div>
+                        <div class="news-comment-count">15</div>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-item-text">В Ростовской области около 30 тысяч человек остались без света из-за снегопада</div>
+                    <div class="news-item-status">
+                        <a href="#">/ Погода</a>
+                        <div class="news-time">10:45</div>
+                        <div class="news-comment-count">15</div>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-item-text">Продажи Tesla во Франции в январе рухнули на 63%</div>
+                    <div class="news-item-status">
+                        <a href="#">/ Транспорт</a>
+                        <div class="news-time">10:45</div>
+                        <div class="news-comment-count">15</div>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-item-text">Криштиану Роналду считает себя самым совершенным футболистом в истории</div>
+                    <div class="news-item-status">
+                        <a href="#">/ Спорт</a>
+                        <div class="news-time">10:45</div>
+                        <div class="news-comment-count">15</div>
+                    </div>
+                </div>
+                <a id="open-all-news">Все новости</a>
+            </div>
+            <div id="column-center">
+                <div class="photo-news">
+                    <div class="category-photo-news">/ Политика</div>
+                    <div class="name-photo-news">В Кремле европейской экономике предрекли кризис<br></div>
+                    <div class="time-photo-news">
+                        <div class="data-photo">04 Февраля 2025</div>
+                        <div class="time-photo">12:24</div>
+                    </div>
+                </div>
+                <div class="photo-news-pic">
+                    <div class="news-pic-left">
+                        <div class="news-item-center">
+                            <img src="assets/img/photo-news-1.png" alt="Политика" class="news-item-center-img">
+                            <div class="news-item-text-center">Путин проведет<br> заседание Совета по науке и образованию<br><br></div>
+                            <div class="news-item-status-center">
+                                <a href="#">/ Политика</a>
+                                <div class="news-time-center">10:45</div>
+                                <div class="news-comment-count-center">15</div>
+                            </div>
+                        </div>
+                        <div class="news-item-center">
+                            <img src="assets/img/photo-news-3.png" alt="Политика" class="news-item-center-img">
+                            <div class="news-item-text-center">Названа причина масштабного сбоя в работе интернет-сервисов в России<br><br></div>
+                            <div class="news-item-status-center">
+                                <a href="#">/ Интернет</a>
+                                <div class="news-time-center">10:45</div>
+                                <div class="news-comment-count-center">10</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-pic-right">
+                        <div class="news-item-center">
+                            <img src="assets/img/photo-news-2.png" alt="" class="news-item-center-img">
+                            <div class="news-item-text-center">Россиянам назвали условие для получения пенсии в 110 тысяч рублей<br><br></div>
+                            <div class="news-item-status-center">
+                                <a href="#">/ Общество</a>
+                                <div class="news-time-center">10:45</div>
+                                <div class="news-comment-count-center">36</div>
+                            </div>
+                        </div>
+                        <div class="news-item-center">
+                            <img src="assets/img/photo-news-4.png" alt="Политика" class="news-item-center-img">
+                            <div class="news-item-text-center">В число фаворитов «Золотого мяча» входят лучшие игроки четырёх крупнейших клубов мира<br><br></div>
+                            <div class="news-item-status-center">
+                                <a href="#">/ Спорт</a>
+                                <div class="news-time-center">10:45</div>
+                                <div class="news-comment-count-center">15</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="column-right">
+                <img src="assets/img/banner2.png" alt="Баннер" class="banner-img"><br><br>
+                <img src="assets/img/banner1.png" alt="Баннер" class="banner-img"><br><br>
+            </div>
+        </div>
+        <div id="special-news">
+            <div class="fixed-block" id="flex-container-spec">
+                <div id="special-left">
+                    <div class="special-news-big">
+                        <div class="special-category-name">/ Политика</div>
+                        <div class="special-news-name">Над Мексикой прошли полеты разведывательной авиации США</div>
+                        <div class="time-special-news">
+                            <div class="data-special">04 Февраля 2025</div>
+                            <div class="time-special">10:45</div>
+                        </div>
+                        <div class="special-news-description">Соединенные Штаты Америки приступили к активным действиям по наблюдению за территорией Мексики с использованием специальной авиационной техники.</div>
+                    </div>
+                </div>
+                <div id="special-right">
+                    <h2>Самые читаемые новости</h2>
+                    <div class="news-item-block-special">
+                        <div class="news-item-text-block-special">Посольство КНР: Китай справедливо ответил на торговые пошлины США</div>
+                        <div class="news-item-status-block-special">
+                            <a href="#">/ Политика</a>
+                            <div class="news-time-block-special">10:45</div>
+                            <div class="news-comment-count-block-special">15</div>
+                        </div>
+                    </div>
+                    <div class="news-item-block-special">
+                        <div class="news-item-text-block-special">Юристы назвали работу Маска в администрации Трампа кошмаром</div>
+                        <div class="news-item-status-block-special">
+                            <a href="#">/ Политика</a>
+                            <div class="news-time-block-special">10:45</div>
+                            <div class="news-comment-count-block-special">15</div>
+                        </div>
+                    </div>
+                    <div class="news-item-block-special">
+                        <div class="news-item-text-block-special">Ким Чен Ын поздравил Лукашенко с победой на выборах президента </div>
+                        <div class="news-item-status-block-special">
+                            <a href="#">/ Политика</a>
+                            <div class="news-time-block-special">10:45</div>
+                            <div class="news-comment-count-block-special">15</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="separator"></div>
+    <footer id="footer">
+        <div id="fixed-top-footer-flex">
+            <div id="footer-left">
+                <div id="footer-left-l">
+                    <ul class="footer-left-list">
+                        <li class="footer-left-list-element">
+                            <a href="#" class="link-footer-left">Главная</a>
+                        </li>
+                        <li class="footer-left-list-element">
+                            <a href="#" class="link-footer-left">Политика</a>
+                        </li>
+                        <li class="footer-left-list-element">
+                            <a href="#" class="link-footer-left">Общество</a>
+                        </li>
+                        <li class="footer-left-list-element">
+                            <a href="#" class="link-footer-left">Экономика</a>
+                        </li>
+                        <li class="footer-left-list-element">
+                            <a href="#" class="link-footer-left">В мире</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="footer-left-r">
+                    <ul class="footer-left-list">
+                        <li class="footer-left-list-element">
+                            <a href="#" class="link-footer-left">Путешествия</a>
+                        </li>
+                        <li class="footer-left-list-element">
+                            <a href="#" class="link-footer-left">Спорт</a>
+                        </li>
+                        <li class="footer-left-list-element">
+                            <a href="#" class="link-footer-left">Наука</a>
+                        </li>
+                        <li class="footer-left-list-element">
+                            <a href="#" class="link-footer-left">Туризм</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="footer-center">
+                <div class="div-center">
+                    <ul class="footer-left-list">
+                        <li class="footer-left-list-element">
+                            <a href="#" class="link-footer-left"><img src="assets/img/news-logo-footer.png" alt="Логотип" class="footer-list-img"></a>
+                        </li>
+                        <li class="footer-left-list-element">
+                            <a href="#" class="link-footer-left">Об агенстве</a>
+                        </li>
+                        <li class="footer-left-list-element">
+                            <a href="#" class="link-footer-left">Контакты</a>
+                        </li>
+                        <li class="footer-left-list-element">
+                            <a href="#" class="link-footer-left">Опубликовать новость</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="footer-right">
+                <div class="social-nav">
+                    <a href="#" class="social-nav-link"><img src="assets/img/icon-vk.png" alt="VK" class="social-nav-link-img"></a>
+                    <a href="#" class="social-nav-link"><img src="assets/img/icon-fb.png" alt="Facebook" class="social-nav-link-img"></a>
+                    <a href="#" class="social-nav-link"><img src="assets/img/icon-t.png" alt="Twitter" class="social-nav-link-img"></a>
+                    <a href="#" class="social-nav-link"><img src="assets/img/icon-i.png" alt="Instagram" class="social-nav-link-img"></a>
+                </div>
+                <div class="phone">+8 (800) 555-35-35</div>
+                <div class="mail">news@news.news</div>
+            </div>
+        </div>
+        <div id="bottom-bar">© Новостное агентство, 2017-2018 все права защищены</div>
+
+    </footer>
+</body>
+</html>
