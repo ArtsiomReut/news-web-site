@@ -2,8 +2,8 @@
 
 В работе использовались:
 - [VS Code](https://code.visualstudio.com/)
-- HTML 5 (position, flex)
-- CSS 3
+- HTML 5 
+- CSS 3 (position, flex)
 - [JQuery v3.7.1](https://jquery.com/)
 
 Библиотеки VS Code:
